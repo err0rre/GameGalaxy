@@ -1,0 +1,280 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="media/fireball_6258470.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>GameGalaxy</title> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/general_styles.css">
+        
+        <div class="navbar">
+            <a href="index.html">
+                <img class="brand" src="media/Group 91.svg" alt="GameGalaxy brand">
+            </a>
+            <div class="page-links">
+                <a href="index.html"><button class="menu-button">Indie Game Showcase</button></a> 
+                <a href="Art&Music.html"><button class="menu-button">Art & Music</button></a>
+                <a href="EventCalendar.html"><button class="menu-button">Event Calendar</button></a>
+                <button class="menu-button">Community Hub</button>
+            </div>
+            <div class="user">
+                <img class="user_icon" src="media/icon _profile circle_.svg" alt="User icon">
+                <button class="login-button">Log In</button>
+                <button class="signup-button">Sign Up</button>
+                <button id="translate_button" aria-label="Translate">Translate</button>
+            </div>
+            <!--Google Translate. (n.d.). Google Translate Element. [JavaScript]. 
+                https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit-->
+            <div id="google_translate_element" style="display: none;">
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>
+    </head>
+
+    <body style="background-image: url('media/31829532.jpeg')">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search..." class="search-input" aria-label="Search">
+            <button class="search-button" aria-label="Search">Search</button>
+        </div>
+            
+        <div class="main">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <div class="image-container">
+                        <img class="head-image" src="media/strave.png" alt="Don't strave together head image">
+                        <div class="right-image-container">
+                            <img src="media/strave1.jpg" alt="Don't strave together image 1">
+                            <img src="media/strave2.jpg" alt="Don't strave together image 2">
+                            <img src="media/strave3.jpg" alt="Don't strave together image 3">
+                            <img src="media/strave4.jpg" alt="Don't strave together image 4">
+                            <div class="description">
+                                <h2>Here is the game description lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">⭐️⭐️⭐️⭐️⭐️ @UserA: Comments here lorem ipsum!💕 Dolor sit amet!! </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <div class="image-container">
+                        <img class="head-image" src="media/hollow.png"  alt="Hollow knight head image">
+                        <div class="right-image-container">
+                            <img src="media/hollow1.jpg" alt="Hollow knight image 1">
+                            <img src="media/hollow2.jpg" alt="Hollow knight image 2">
+                            <img src="media/hollow3.jpg" alt="Hollow knight image 3">
+                            <img src="media/hollow4.jpg" alt="Hollow knight image 4">
+                            <div class="description">
+                                <h2>Here is the game description lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur in hac habitasse platea dictumst. </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">⭐️⭐️⭐️⭐️⭐️ @UserB: Comments here lorem ipsum dolor sit amet. </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <div class="image-container">
+                        <img class="head-image" src="media/valley.png" alt="Stardew Valley's Pster" alt="Stardew Valley head image">
+                        <div class="right-image-container">
+                            <img src="media/valley1.jpg" alt="Stardew Valley head image 1">
+                            <img src="media/valley2.jpg" alt="Stardew Valley head image 2">
+                            <img src="media/valley3.jpg" alt="Stardew Valley head image 3">
+                            <img src="media/valley4.jpg" alt="Stardew Valley head image 4">
+                            <div class="description">
+                                <h2>Here is the game description lorem ipsum dolor sit amet consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">⭐️⭐️⭐️⭐️⭐️ @UserC: Comments here lorem ipsum dolor.😄 </div>
+                </div>
+                <div class="mySlides fade">
+                    <a href="game-info.html">
+                        <div class="numbertext">4 / 4</div>
+                        <div class="image-container">
+                            <img class="head-image" src="media/game.jpg" alt="Demo game head image">
+                            <div class="right-image-container">
+                                <img src="media/game2.jpg" alt="Demo game head image 1">
+                                <img src="media/game3.jpg" alt="Demo game head image 2">
+                                <img src="media/game3.jpg" alt="Demo game head image 3">
+                                <img src="media/game2.jpg" alt="Demo game head image 4">
+                                <div class="description">
+                                    <h2>Here is the game description lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="text">⭐️⭐️⭐️⭐️⭐️ @User321: Comments here lorem ipsum! Dolor sit amet!!❤️❤️ </div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!-- The dots -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <div class="sub-title">
+            <h1>Most Popular ❯</h1>
+        </div>
+        <div class="top-games-container">
+            <div class="game">
+                <a href="hollow-info.html">
+                    <img src="media/hollow.png" alt="Hollow Knight's Poster">
+                    <h1>Hollow Knight</h1>
+                    <h4>Explore the vast, mysterious underground world of Hollow Knight, a beautifully crafted 2D action-platformer.</h4>
+                </a>
+            </div>
+            <div class="game">
+                <img src="media/valley.png" alt="Stardew Valley's Pster">
+                <h1>Stardew Valley</h1>
+                <h4>Build your own farm, socialize with villagers, and embark on adventures in this beloved farm simulation game.</h4>
+            </div>
+        </div>
+            
+        <div class="sub-title">
+            <h1>Just Released ❯</h1>
+        </div>
+        <div class="game-section">
+            <div class="game-grid">
+                <div class="game col-4 col-md-1 col-lg-1">
+                    <img src="media/valley.png" alt="Stardew Valley's Pster">
+                    <h2>Stardew Valley</h2>
+                </div>
+                <div class="game col-4 col-md-1 col-lg-1">
+                    <img src="media/hollow.png" alt="Hollow Knight's Poster">
+                    <h2>Hollow Knight</h2>
+                </div>
+                <div class="game col-4 col-md-1 col-lg-1">
+                    <a href="strave-info.html">
+                    <img src="media/strave.png" alt="Don't Strave's Psoter">
+                    <h2>Don't Strave</h2>
+                    </a>
+                </div>
+                <div class="game col-4 col-md-1 col-lg-1">
+                    <a href="strave-info.html">
+                    <img src="media/strave.png" alt="Don't Strave's Psoter">
+                    <h2>Don't Strave</h2>
+                    </a>
+                </div>
+                <div class="game col-4 col-md-1 col-lg-1">
+                    <img src="media/valley.png" alt="Stardew Valley's Pster">
+                    <h2>Stardew Valley</h2>
+                </div>
+                <div class="game col-4 col-md-1 col-lg-1">
+                    <img src="media/hollow.png" alt="Hollow Knight's Poster">
+                    <h2>Hollow Knight</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-title">
+            <h1>Featured ❯</h1>
+        </div>
+        <div class="bottom-game-section">
+            <div class="game">
+                <img src="media/ValleyVertical.jpg" alt="Stardew Valley's Pster">
+                <h3>Stardew Valley</h3>
+            </div>
+            <div class="game">
+                <img src="media/Hollow_Vertical.jpg" alt="Hollow Knight's Poster">
+                <h3>Hollow Knight</h3>
+            </div>
+            <div class="game">
+                <img src="media/ValleyVertical.jpg" alt="Stardew Valley's Pster">
+                <h3>Stardew Valley</h3>
+            </div>
+            <div class="game">
+                <img src="media/Hollow_Vertical.jpg" alt="Hollow Knight's Poster">
+                <h3>Hollow Knight</h3>
+            </div>
+            <div class="game">
+                <img src="media/ValleyVertical.jpg" alt="Stardew Valley's Pster">
+                <h3>Stardew Valley</h3>
+            </div>
+            <div class="game">
+                <img src="media/Hollow_Vertical.jpg" alt="Hollow Knight's Poster">
+                <h3>Hollow Knight</h3>
+            </div>
+            <div class="game">
+                <img src="media/ValleyVertical.jpg" alt="Stardew Valley's Pster">
+                <h3>Stardew Valley</h3>
+            </div>
+            <div class="game">
+                <img src="media/Hollow_Vertical.jpg" alt="Hollow Knight's Poster">
+                <h3>Hollow Knight</h3>
+            </div>
+            <div class="game">
+                <img src="media/ValleyVertical.jpg" alt="Stardew Valley's Pster">
+                <h3>Stardew Valley</h3>
+            </div>
+            <div class="game">
+                <img src="media/Hollow_Vertical.jpg" alt="Hollow Knight's Poster">
+                <h3>Hollow Knight</h3>
+            </div>
+            <div class="game">
+                <img src="media/ValleyVertical.jpg" alt="Stardew Valley's Pster">
+                <h3>Stardew Valley</h3>
+            </div>
+            <div class="game">
+                <img src="media/Hollow_Vertical.jpg" alt="Hollow Knight's Poster">
+                <h3>Hollow Knight</h3>
+            </div>
+            <div class="game">
+                <img src="media/ValleyVertical.jpg" alt="Stardew Valley's Pster">
+                <h3>Stardew Valley</h3>
+            </div>
+            <div class="game">
+                <img src="media/Hollow_Vertical.jpg" alt="Hollow Knight's Poster">
+                <h3>Hollow Knight</h3>
+            </div>
+            <div class="game">
+                <img src="media/ValleyVertical.jpg" alt="Stardew Valley's Pster">
+                <h3>Stardew Valley</h3>
+            </div>
+        </div>
+
+        <footer class="flex-footer-navbar footer-navbar"  aria-label="navbar">
+            <div class="page-links">
+                <a href="index.html"><button class="menu-button" aria-label="Go to Indie Game Showcase page">Indie Game Showcase</button></a> 
+                <a href="Art&Music.html"><button class="menu-button" aria-label="Go to Art & Music page">Art & Music</button></a>
+                <a href="EventCalendar.html"><button class="menu-button" aria-label="Go to Event Calendar page">Event Calendar</button></a>
+                <button class="menu-button" aria-label="Visit the Community Hub page">Community Hub</button>
+            </div>
+        </footer>
+    </body> 
+
+    <footer class="footer">
+        <div class="footer-section footer-section-1">
+            <p>&copy; 2023 GameGalaxy. All Rights Reserved.</p>
+            <p>Follow Us: @gamegalaxy</p>
+            <p>Contact Us: contact@gamegalaxy.com</p>
+            <p>Phone: 12-3456-789</p>
+            <p>Address: 123 Gaming Street, GameCity</p>
+        </div>
+        <div class="footer-section footer-section-2">
+            <p class="footer-section-2-text">Security and Privacy Policy</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-section footer-section-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. Sed auctor quam vel augue luctus, id venenatis eros rhoncus. Curabitur hendrerit nisl at mi vehicula, ac malesuada nisi ultrices. Quisque consequat lobortis tristique. Vestibulum vel dolor eget arcu aliquet vulputate. Suspendisse potenti. Sed viverra est eget dictum. Etiam condimentum nisl eu sem rhoncus, eu fermentum elit suscipit. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. Sed auctor quam vel augue luctus, id venenatis eros rhoncus. Curabitur hendrerit nisl at mi vehicula, ac malesuada nisi ultrices. Quisque consequat lobortis tristique. Vestibulum vel dolor eget arcu aliquet vulputate. Suspendisse potenti. Sed viverra est eget dictum. Etiam condimentum nisl eu sem rhoncus, eu fermentum elit suscipit. Nulla facilisi.</p>
+        </div>
+    </footer>
+<script src="js/translate.js"></script>
+<script src="js/site_interactions.js"></script>  
+</html>

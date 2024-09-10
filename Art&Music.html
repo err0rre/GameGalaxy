@@ -1,0 +1,265 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="media/fireball_6258470.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>GameGalaxy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/general_styles.css">
+        <link rel="stylesheet" href="css/Art&Music_styles.css">
+
+        <div class="navbar">
+            <a href="index.html">
+                <img class="brand" src="media/Group 91.svg" alt="GameGalaxy brand">
+            </a>
+            <div class="page-links">
+                <a href="index.html"><button class="menu-button">Indie Game Showcase</button></a> 
+                <a href="Art&Music.html"><button class="menu-button">Art & Music</button></a>
+                <a href="EventCalendar.html"><button class="menu-button">Event Calendar</button></a>
+                <button class="menu-button">Community Hub</button>
+            </div>
+            <div class="user">
+                <img class="user_icon" src="media/icon _profile circle_.svg" alt="User icon">
+                <button class="login-button">Log In</button>
+                <button class="signup-button">Sign Up</button>
+                <button id="translate_button" aria-label="Translate">Translate</button>
+            </div>
+            <!--Google Translate. (n.d.). Google Translate Element. [JavaScript]. 
+                https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit-->
+            <div id="google_translate_element" style="display: none;">
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>
+
+    </head>
+    <body style="background-image: url('media/31829532.jpeg')">
+    
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search..." class="search-input" aria-label="Search">
+            <button class="search-button" aria-label="Search">Search</button>
+        </div>
+        
+        <div class="top-section">
+            <div class="top-5-songs">
+                <h2>Top 5 Songs</h2>
+                <ul class="song-list">
+                    <li>
+                        <img src="media/music.jpg" alt="The 1st most popular song cover">
+                        <div class="song-info">
+                            <h3>Rhythms of electronic</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="media/music.jpg" alt="The 2ed most popular song cover">
+                        <div class="song-info">
+                            <h3>Rhythms of electronic</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="media/music.jpg" alt="The 3rd most popular song cover">
+                        <div class="song-info">
+                            <h3>Rhythms of electronic</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="media/music.jpg" alt="The 4th most popular song cover">
+                        <div class="song-info">
+                            <h3>Rhythms of electronic</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="media/music.jpg" alt="The 4th most popular song cover">
+                        <div class="song-info">
+                            <h3>Rhythms of electronic</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="recommended-music">
+                <h2>Recommended Music</h2>
+                <div class="music-card">
+                    <h3>Song Title</h3>
+                    <p>Artist: Artist Name</p>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
+                </div>
+                <div class="music-card">
+                    <h3>Song Title</h3>
+                    <p>Artist: Artist Name</p>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="music-card">
+                    <h3>Song Title</h3>
+                    <p>Artist: Artist Name</p>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.</p>
+                </div>
+                <div class="music-card">
+                    <h3>Song Title</h3>
+                    <p>Artist: Artist Name</p>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="artwork-section">
+            <h2>Artwork</h2>
+            <div class="artwork-cards">
+                <div class="artwork-card">
+                    <img src="media/artwork1.jpg" alt="Artwork 1">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork2.jpg" alt="Artwork 2">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork1.jpg" alt="Artwork 3">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork2.jpg" alt="Artwork 4">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork1.jpg" alt="Artwork 5">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork2.jpg" alt="Artwork 4">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+            </div>
+
+            <div class="artwork-cards">
+                <div class="artwork-card">
+                    <img src="media/artwork2.jpg" alt="Artwork 2">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork1.jpg" alt="Artwork 3">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork2.jpg" alt="Artwork 4">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork1.jpg" alt="Artwork 5">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork2.jpg" alt="Artwork 1">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork1.jpg" alt="Artwork 5">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+            </div>
+
+
+            <div class="artwork-cards">
+                <div class="artwork-card">
+                    <img src="media/artwork1.jpg" alt="Artwork 1">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork2.jpg" alt="Artwork 2">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork1.jpg" alt="Artwork 3">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork2.jpg" alt="Artwork 4">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork1.jpg" alt="Artwork 5">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+                <div class="artwork-card">
+                    <img src="media/artwork2.jpg" alt="Artwork 4">
+                    <h3>Artist Name</h3>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4>#XXGame fan creation</h4>
+                </div>
+            </div>
+        </div>
+
+        <footer class="flex-footer-navbar footer-navbar"  aria-label="navbar">
+            <div class="page-links">
+                <a href="index.html"><button class="menu-button" aria-label="Go to Indie Game Showcase page">Indie Game Showcase</button></a> 
+                <a href="Art&Music.html"><button class="menu-button" aria-label="Go to Art & Music page">Art & Music</button></a>
+                <a href="EventCalendar.html"><button class="menu-button" aria-label="Go to Event Calendar page">Event Calendar</button></a>
+                <button class="menu-button" aria-label="Visit the Community Hub page">Community Hub</button>
+            </div>
+        </div>
+    </footer>
+    </body> 
+    
+    <footer class="footer">
+        <div class="footer-section footer-section-1">
+            <p>&copy; 2223 GameGalaxy. All Rights Reserved.</p>
+            <p>Follow Us: @gamegalaxy</p>
+            <p>Contact Us: contact@gamegalaxy.com</p>
+            <p>Phone: 12-3456-789</p>
+            <p>Address: 123 Gaming Street, GameCity</p> 
+        </div>
+        <div class="footer-section footer-section-2">
+            <p class="footer-section-2-text">Security and Privacy Policy</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-section footer-section-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. Sed auctor quam vel augue luctus, id venenatis eros rhoncus. Curabitur hendrerit nisl at mi vehicula, ac malesuada nisi ultrices. Quisque consequat lobortis tristique. Vestibulum vel dolor eget arcu aliquet vulputate. Suspendisse potenti. Sed viverra est eget dictum. Etiam condimentum nisl eu sem rhoncus, eu fermentum elit suscipit. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. Sed auctor quam vel augue luctus, id venenatis eros rhoncus. Curabitur hendrerit nisl at mi vehicula, ac malesuada nisi ultrices. Quisque consequat lobortis tristique. Vestibulum vel dolor eget arcu aliquet vulputate. Suspendisse potenti. Sed viverra est eget dictum. Etiam condimentum nisl eu sem rhoncus, eu fermentum elit suscipit. Nulla facilisi.</p>
+        </div>
+    </footer>
+
+<script src="js/translate.js"></script>
+</html>

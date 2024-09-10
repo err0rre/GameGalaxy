@@ -1,0 +1,281 @@
+.main {
+    grid-column: 1 / -1; 
+    grid-row: 2;
+    width: 80vw; 
+    margin: 0 auto;
+  }
+  
+  * {box-sizing:border-box}
+  /* Slideshow container */
+  .slideshow-container {
+    border-radius: 2px;
+    max-width: 150vw;
+    position: relative;
+    margin-top: 2vh;
+    position: relative;
+    background-color: rgba(61, 61, 73, 0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .image-container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+  
+  .head-image {
+    max-width: 50vw;
+    margin: 1vw;
+    object-fit: cover;
+    grid-column: 1
+  }
+  
+  .right-image-container img {
+    margin-top: 1vw;
+    height: 8vw;
+    overflow: hidden;
+    grid-column: 2
+  }
+
+  .description {
+    height: 12vw;
+    overflow-y: auto;
+    color: #c5c8d3;
+    margin-top: 0;
+    margin-right: 2vw;
+    font-size: 1vw;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    margin-bottom: 0;
+    color: #f2f2f2;
+    font-size: 2vw;
+    padding: 1vw 1vw;
+    bottom: 1vw;
+    width: 100%;
+    text-align: left;
+  }
+  
+  /* Number text (1/4 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 15px;
+    margin: 0 2vw;
+    background-color: #686d73;
+    border-radius: 30%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  /* card */
+  .sub-title h1 {
+    margin-left: 10vw;
+    margin-top: 0;
+    font-size: 2vh;
+    padding: 1vh;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .game {
+    background-color: rgba(61, 61, 73, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    overflow: hidden;
+  }
+  
+  .game:hover {
+    transform: translateY(-5px);
+  }
+  
+  .game img {
+    max-width: 100%;
+  }
+  
+  .game h1 {
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 0 1vw;
+  }
+  
+  .game h2 {
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 1vw;
+    margin-bottom: 0.5vw;
+    margin-top: 0;
+  }
+  
+  .game h3 {
+    font-size: 1vw;
+    color: #efefef;
+    text-align: left;
+    margin: 1vw;
+    margin-bottom: 0.5vw;
+    margin-top: 0;
+  }
+  
+  .game h4 {
+    font-size: 2vw;
+    color: #c4c8d2;
+    text-align: left;
+    margin: 1vw;
+  }
+  
+  .top-games-container {
+    display: flex;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    justify-content: space-around;
+    gap: 2vw;
+    margin-bottom: 5vw;
+  }
+  
+  .game-section {
+    margin-bottom: 5vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+  }
+  
+  
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .bottom-game-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-bottom: 5vw;
+  }
+  
+@media (max-width: 768px) {
+  .image-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .head-image {
+    max-width: 70vw;
+    margin: 1vw;
+    object-fit: cover;
+    grid-column: 1
+  }
+  
+  .right-image-container img {
+    height: 10vw;
+    margin-left: 2vw;
+  }
+
+
+  .description {
+    height: 20vw;
+    font-size: 3vw;
+    margin-left: 2vw;
+  }
+  .text {
+    font-size: 3vw;
+  }
+
+
+  .top-games-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-games-container h1 {
+    font-size: 6vw;
+  }
+  .top-games-container h4 {
+    font-size: 4vw;
+  }
+
+  .game h2 {
+    font-size: 4vw;
+  }
+  
+  .game h3 {
+    font-size: 4vw;
+  }
+  
+  .bottom-game-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

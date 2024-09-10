@@ -1,0 +1,323 @@
+/* Set background color and spacing */
+body {
+    color: #fff;
+}
+
+h1 {
+    font-size: 5vw;
+    margin: 8vw;
+    margin-bottom: 0;
+    margin-top: 2vw;
+    padding: 1vw;
+    background-color: rgba(27, 27, 37, 0.736);
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    display: inline-block;
+    text-align: center;
+    border: rgba(186, 197, 206, 0.727) 0.1px solid;
+}
+
+/* Style the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 8vw;
+    margin-top: 2vw;
+    margin-bottom: 0;
+}
+
+.big-image {
+    height: 25vw;
+    margin-right: 2vw;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.right-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small-image {
+    margin-bottom: 2vw;
+    height: 7vw;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.info {
+    margin-left: 2vw;
+}
+
+.info h2 {
+    font-size: 2vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.info p {
+    font-size: 1vw;
+    margin-bottom: 0;
+}
+
+/* developer introduction section */
+.content {
+    display: flex;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    align-items: flex-start;
+}
+
+/* Remove text decoration and set default link color */
+.column a {
+    text-decoration: none;
+    color: #e2e2e2
+}
+
+/* Change the link color on hover */
+.column a:hover {
+    background-color: rgba(77, 99, 145, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.left-column h2 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.left-column p {
+    font-size: 0.7vw;
+    margin: 0;
+}
+
+.developer-intro {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding: 1vw;
+    background-color: rgba(27, 27, 37, 0.736);
+    border-radius: 8px;
+}
+
+.developer-intro img {
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+}
+
+.awards-list {
+    margin-left: 0;
+}
+
+.awards-list h2 {
+    font-size: 2vw;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.awards-list p {
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+/* Game description section */
+.game-description {
+    background-color: rgba(29, 34, 44, 0.707);
+    padding: 1vw;
+    margin: 2vw;
+    border-radius: 5px;
+}
+
+.game-description h2 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.game-description p {
+    font-size: 1.5vw;
+}
+
+/* Download buttons */
+.download-button {
+    margin-top: 1vw;
+    margin-left: 0;
+    padding: 0.5vw;
+    font-size: 1vw;
+    text-align: center;
+    background-color: rgba(134, 140, 153, 0.5);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    border: 1px solid #a7adba;
+    width: 10vw;
+}
+
+.download-button:hover {
+    background-color: rgba(77, 99, 145, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+/*-------comments-section------*/
+.comments-section h2 {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: inline-block;
+    background-color: rgba(134, 140, 153, 0.5);
+    padding: 1vw;
+    font-size: 2vw;
+}
+
+.comments-section {
+    background-color: rgba(134, 140, 153, 0.3);
+    padding: 2vw;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .comments-section h2 {
+    font-size: 3vw;
+    margin: 0;
+    margin-bottom: 2vw;
+  }
+  
+  .user-comment {
+    margin-bottom: 2vw;
+  }
+  
+  .user-comment input[type="text"] {
+    width: 70%;
+    padding: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: rgba(211, 225, 255, 0.9);
+    font-size: 2vw;
+  }
+  
+  .user-comment button {
+    background-color: rgba(134, 140, 153, 0.5);
+    color: #fff;
+    border: none;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    border: 1px solid #a7adba;
+    font-size: 2vw;
+  }
+  
+  .user-comment button:hover {
+    background-color: rgba(77, 99, 145, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+
+  .user-comments .comment {
+    background-color: rgba(134, 140, 153, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1vw;
+    margin-bottom: 1vw;
+  }
+  
+.comment h3 {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 2vw;
+  }
+  
+.comment p {
+    margin: 0;
+    font-size: 1.5vw;
+  }
+
+@media (max-width: 768px) {
+.awards-list p {
+    font-size: 4vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+    max-height: 25vw;
+    overflow-y: auto;
+}
+.info h2 {
+    font-size: 3vw;
+}
+
+.info p {
+    font-size: 3vw;
+}
+
+
+.left-column h2 {
+    font-size: 3vw;
+}
+
+.left-column p {
+    font-size: 1.4vw;
+}
+
+.awards-list h2 {
+    font-size: 3vw;
+}
+
+.awards-list p {
+    font-size: 3vw;
+    width: 50vw;
+}
+
+.game-description h2 {
+    font-size: 3vw;
+}
+
+.game-description p {
+    font-size: 3vw;
+    
+}
+
+.download-button {
+    font-size: 2vw;
+}
+
+.comments-section h2 {
+    font-size: 3vw;
+}
+
+.user-comment input[type="text"] {
+    font-size: 3vw;
+}
+
+.user-comment button {
+    font-size: 3vw;
+}
+
+.comment h3 {
+    font-size: 3vw;
+}
+
+.comment p {
+    font-size: 2.5vw;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+}

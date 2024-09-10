@@ -1,0 +1,540 @@
+.main {
+    grid-column: 1 / -1; 
+    grid-row: 2;
+    width: 80vw; 
+    margin: 0 auto;
+  }
+  
+  * {box-sizing:border-box}
+  /* Slideshow container */
+.slideshow-container {
+    border-radius: 2px;
+    max-width: 150vw;
+    margin-top: 2vh;
+    position: relative;
+    background-color: rgba(61, 61, 73, 0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .image-container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .head-image {
+    max-width: 40vw;
+    margin: 1vw;
+    object-fit: cover;
+    grid-column: 1
+  }
+  
+.join-us {
+  background-color: #45539D;
+  background-color: rgba(46, 45, 49, 0.5);
+  color: #fff;
+  border: 0.5px solid #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1vw;
+  float: right;
+  margin-top: 1vw;
+  margin-right: 1vw;
+}
+
+.join-us:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* text */
+  .headtext {
+    color: #f2f2f2;
+    font-size: 2vw;
+    padding: 1vw;
+    padding-bottom: 0;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 15px;
+    margin: 0 2vw;
+    background-color: #686d73;
+    border-radius: 30%;
+    display: inline-block;
+    transition:  0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+    transform: scale(1.05);
+  }
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .calendar-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: minmax(10vh, auto);
+    gap: 0.5vw;
+    margin: 3vh;
+  }
+
+.eventContainer {
+    height: 23vw;
+    overflow-y: auto;
+    color: #c5c8d3;
+    margin: 0;
+    margin-right: 2vw;
+    padding-left: 1vw;
+    font-size: 2vw;
+  }
+  
+  .eventContainer p {
+    margin-top: 0;
+  }
+
+  .calendar {
+    background-color: rgba(141, 140, 151, 0.6);
+    border-radius: 5px;
+    margin-left: 5vw;
+    width: 25vw;
+  }
+
+  .month {
+    padding: 2vh 3vh;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Month list */
+  .month ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+  }
+  
+  .month ul li {
+    color: rgb(15, 15, 15);
+    font-size: 2vh;
+    text-transform: uppercase;
+    letter-spacing: 0.3vh;
+    list-style-type: none;
+  }
+  
+  /* Previous button inside month header */
+  .month .prev {
+    position: absolute;
+    left: 0; ;
+    padding: 1vw;
+    margin-left: -20px;
+  }
+  
+  /* Next button */
+  .month .next {
+    position: absolute;
+    right: 0;
+    padding: 1vw;
+    margin-right: -20px;
+  }
+  
+  .weekdays-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.3vw;
+    justify-items: center;
+    align-items: center;
+    padding: 1vw;
+    padding-bottom: 0;
+  }
+  
+  .weekday {
+    font-weight: bold;
+    font: 2vw;
+  }
+  
+  /* Days (1-31) */
+  .date-buttons {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.3vh;
+    justify-items: center;
+    align-items: center;
+    padding: 1vw;
+  }
+  
+  .date-buttons li {
+    background-color: #b4b2ca;
+    width: 4vw;
+    height: 2vh;
+    padding: 0;
+    margin: 0; 
+    font-size: 1vh;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    list-style-type: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 3vw;
+  }
+  
+  .date-buttons li:hover {
+    background: #45539D;
+    color: white;
+    transform: scale(1.05);
+  }
+
+.Event-container {
+  background-color: rgb(212, 211, 225,0.7);
+  border-radius: 5px;
+  margin-left: 1vw;
+  width: 60vw;
+}
+
+.news-calendar {
+  padding: 1vw;
+  height: auto;
+  overflow-y: auto;
+  padding-bottom: 0;
+}
+
+.news-calendar p, .news-calendar h2 {
+  margin: 0.3vw;
+  font: 1vw;
+}
+
+.More {
+  background-color: rgba(46, 45, 49, 0.5);
+  color: #fff;
+  border: 0.5px solid #fff;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 2vw;
+  float: right;
+  margin-right: 1vw;
+  margin-bottom: 2vw;
+}
+
+.More:hover {
+  background-color: #000000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Define styles for the .newscast container */
+.newscast {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.newscasttitle {
+  color: #dfddf3;
+  font: 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 0.5vw;
+  border: 1px solid #515151;
+  margin: 1vw;
+  margin-bottom: -0.5vw;
+  border-radius: 0;
+  background-color:  rgba(70, 71, 83, 0.6);
+}
+
+/* Style each .newscast-item */
+.newscast-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+  border: 1px solid #515151;
+  margin: 1vw;
+  margin-bottom: 2vw;
+  border-radius: 0;
+  background-color:  rgba(33, 34, 41, 0.6);
+}
+
+/* Style the image */
+.newscast img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image {
+  width: 30vw;
+}
+
+/* Style the content (text) */
+.content1 {
+  flex: 1;
+  padding: 0;
+  padding-left: 2vw;
+}
+
+.content2 {
+  flex: 1;
+  padding: 0;
+  padding-right: 2vw;
+}
+
+.content3 {
+  flex: 1;
+  padding: 0;
+  padding-left: 2vw;
+}
+
+/* Style the h2 and p elements */
+.newscast h2 {
+  font-size: 2.5vw;
+  margin-bottom: 1vw;
+  color: #dfddf3;
+  margin-top: 0;
+}
+
+.newscast p {
+  font-size: 1.5vw;
+  color: #dfddf3;
+}
+
+/* Style the button */
+.newscast button {
+  background-color: #4b555f;
+  color: #fff;
+  padding: 1vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  float: right;
+}
+
+.newscast button:hover {
+  background-color: #6a8bae;
+  transform: scale(1.05);
+}
+
+/*-----Api-----*/
+label {
+  color:#fff
+}
+.form-group {
+  margin-bottom: 1rem
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 85%;
+  padding: 0.5rem;
+  border: 1px solid #dfddf3;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-check {
+  margin-bottom: 0.25rem;
+}
+
+.form-check-label {
+  display: inline !important;
+  margin-left: 0.25rem;
+}
+.m-2 {
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+.event-text {
+  color: #fff;
+  font-size: 3vw;
+  margin-left: 8vw;
+}
+
+.btn {
+  background-color: #4b555f;
+  color: #fff;
+  padding: 1vw;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-bottom: 10vw;
+}
+
+.btn:hover {
+  background-color: #6a8bae;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+.newscast h2 {
+  font-size: 3vw;
+}
+
+.newscast p {
+  font-size: 2.5vw;
+}
+.eventContainer {
+  font-size: 3vw;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head-image {
+  max-width: 90vw;
+  max-height: 40vw; 
+}
+
+.right-container {
+  max-height: 30vw;
+}
+.right-container p {
+  font-size: 4vw;
+}
+
+.join-us {
+  font-size: 3vw;
+  margin-top: 0;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar {
+  width: 70vw;
+}
+
+.eventContainer p {
+  margin-top: 0;
+}
+
+.Event-container {
+  width: 80vw;
+}
+
+/* Days (1-31) */
+.date-buttons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.3vh;
+  justify-items: center;
+  align-items: center;
+  padding: 2vw;
+}
+
+.date-buttons li {
+  width: 8vw;
+  height: 3vh;
+  font-size: 2vh; 
+  text-align: center;
+  border-radius: 5px;
+}
+
+.More {
+  font-size: 4vw;
+}
+
+/* Define styles for the .newscast container */
+.newscast {
+  display: flex;
+  flex-direction: column;
+}
+
+.newscasttitle {
+  font-size: 5vw;
+  display: flex;
+}
+
+/* Style each .newscast-item */
+.newscast-item {
+  display: grid;
+  flex-direction: column;
+}
+
+/* Style the image */
+.newscast img {
+  max-width:70vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  float: left;
+  margin-left: 2vw;
+}
+
+.image {
+  width: 30vw;
+}
+
+.newscast p {
+  font-size:3vw;
+}
+
+/* Style the button */
+.newscast button {
+  font-size: 4vw;
+  float: right;
+}
+}

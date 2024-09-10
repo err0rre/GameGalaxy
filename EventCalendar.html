@@ -1,0 +1,271 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="media/fireball_6258470.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>GameGalaxy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <link rel="stylesheet" href="css/general_styles.css">
+        <link rel="stylesheet" href="css/EventCalendar_styles.css">
+
+        <div class="navbar">
+            <a href="index.html">
+                <img class="brand" src="media/Group 91.svg" alt="GameGalaxy brand">
+            </a>
+            <div class="page-links">
+                <a href="index.html"><button class="menu-button">Indie Game Showcase</button></a> 
+                <a href="Art&Music.html"><button class="menu-button">Art & Music</button></a>
+                <a href="EventCalendar.html"><button class="menu-button">Event Calendar</button></a>
+                <button class="menu-button">Community Hub</button>
+            </div>
+            <div class="user">
+                <img class="user_icon" src="media/icon _profile circle_.svg" alt="User icon">
+                <button class="login-button">Log In</button>
+                <button class="signup-button">Sign Up</button>
+                <button id="translate_button" aria-label="Translate">Translate</button>
+            </div>
+            <!--Google Translate. (n.d.). Google Translate Element. [JavaScript]. 
+                https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit-->
+            <div id="google_translate_element" style="display: none;">
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>
+    </head>
+
+    <body style="background-image: url('media/31829532.jpeg')">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search..." class="search-input" aria-label="Search">
+            <button class="search-button" aria-label="Search">Search</button>
+        </div>
+            
+        <div class="main">
+            <!-- W3Schools. (n.d.). How TO - Slideshow. [JavaScript]. https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="headtext">News!</div>
+                    <div class="image-container">
+                        <img class="head-image" src="media/news1.jpg" alt="Latest news image">
+                        <div class="right-container">
+                            <div class="eventContainer" id="eventContainer0">
+                                <div class="news-calendar0">
+                                    <h2 id="eventName0"></h2>
+                                    <p id="eventLocation0"></p>
+                                    <p id="description0"></p>
+                                    <p id="dateTime0"></p>
+                                </div>
+                            </div>
+                            <button class="join-us" aria-label="Join Us!">Join Us!</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="headtext">News!</div>
+                    <div class="image-container">
+                        <img class="head-image" src="media/news2.jpg" alt="Latest news image">
+                        <div class="right-container">
+                            <div class="eventContainer" id="eventContainer1">
+                                <div class="news-calendar1">
+                                    <h2 id="eventName1"></h2>
+                                    <p id="eventLocation1"></p>
+                                    <p id="description1"></p>
+                                    <p id="dateTime1"></p>
+                                </div>
+                            </div>
+                            <button class="join-us" aria-label="Join Us!">Join Us!</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="headtext">News!</div>
+                    <div class="image-container">
+                        <img class="head-image" src="media/news3.jpg" alt="Latest news image">
+                        <div class="right-container">
+                            <div class="eventContainer" id="eventContainer2">
+                                <div class="news-calendar2">
+                                    <h2 id="eventName2"></h2>
+                                    <p id="eventLocation2"></p>
+                                    <p id="description2"></p>
+                                    <p id="dateTime2"></p>
+                                </div>
+                            </div>
+                            <button class="join-us" aria-label="Join Us!">Join Us!</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <!-- W3Schools. (n.d.). How TO - CSS Calendar. https://www.w3schools.com/howto/howto_css_calendar.asp-->
+        <div class="calendar-container">
+            <div class="calendar">
+                <div class="month" role="heading" >
+                    <ul>
+                        <li class="prev" onclick="prevMonth()" aria-label="Previous month">&#10094;</li>
+                        <li class="next" onclick="nextMonth()" aria-label="Next month">&#10095;</li>
+                        <li id="month-year"></li>
+                    </ul>
+                </div>
+                
+                <div class="weekdays-container">
+                    <div class="weekday">Su</div>
+                    <div class="weekday">Mo</div>
+                    <div class="weekday">Tu</div>
+                    <div class="weekday">We</div>
+                    <div class="weekday">Th</div>
+                    <div class="weekday">Fr</div>
+                    <div class="weekday">Sa</div>
+                </div> 
+                <div class="main-calendar">
+                    <div class="date-buttons" id="calendar-days"></div>
+                </div>
+            </div>      
+
+            <div class="Event-container" id="eventContainer">
+                <div class="news-calendar">
+                    <h2>New Game Release</h2>
+                    <p>New Game Release: Brace yourselves for the launch of a highly anticipated game title. Prepare to embark on an epic adventure, solve mind-bending puzzles, or engage in intense battles. Stay tuned for the release date and be among the first to experience the excitement.</p>
+                </div>
+                <button class="More" aria-label="Read More">More</button>
+            </div>
+        </div>
+
+        <div class="newscast">
+            <div class="newscasttitle">
+                <h2>Newscast</h2>
+                <h2>"Game On: Where Gamers Unite!"</h2>
+            </div>
+            <div class="newscast-item">
+                <div class="image">
+                    <img src="media/newscast-1.jpg" alt="Image 1">
+                </div>
+                <div class="content1">
+                    <h2>"Indie Developers Shine at Game Jam Extravaganza!"</h2>
+                    <p>"The Indie Developers Game Jam Extravaganza witnessed a burst of creativity as aspiring game makers showcased their talents. From captivating narrative-driven adventures to mind-bending puzzles, these indie developers left attendees in awe. 'Starlight Studios' wowed the crowd with their unique art style, while 'CodeCrafters' unveiled a groundbreaking gameplay mechanic. The meetup proved that indie game development is alive and thriving in our gaming community."</p>
+                    <button aria-label="Join Us">Join Us!</button>
+                </div>
+            </div>
+            <div class="newscast-item">
+                <div class="content2">
+                    <h2>"Indie Excellence and Gaming Culture Unite!"</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur.</p>
+                    <button aria-label="Join Us">Join Us!</button>
+                </div>
+                <div class="image">
+                    <img src="media/newscast.jpg" alt="Image 2">
+                </div>
+            </div>
+            <div class="newscast-item">
+                <div class="image">
+                    <img src="media/newscast-2.jpg" alt="Image 2">
+                </div>
+                <div class="content3">
+                    <h2>“Epic Showdown at the Gamers' Gathering!"</h2>
+                    <p>"In a thrilling turn of events at the Gamers' Gathering meetup, two esports titans clashed in an epic showdown. The matchup between 'SteelBlade' and 'PixelWizard' had spectators on the edge of their seats as they battled it out in a heart-pounding duel. 'SteelBlade' emerged victorious after a nail-biting final round, earning the respect and admiration of fellow gamers. The event was a testament to the competitive spirit that unites our gaming community."</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. Sed auctor quam vel augue luctus, id venenatis eros rhoncus. Curabitur hendrerit nisl at mi vehicula, ac malesuada nisi ultrices. Quisque consequat lobortis tristique. Vestibulum vel dolor eget arcu aliquet vulputate. Suspendisse potenti. Sed viverra est eget dictum. Etiam condimentum nisl eu sem rhoncus, eu fermentum elit suscipit. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst."</p>
+                    <button aria-label="Join Us">Join Us!</button>
+                </div>
+            </div>
+        </div>
+        <footer class="flex-footer-navbar footer-navbar"  aria-label="navbar">
+            <div class="page-links">
+                <a href="index.html"><button class="menu-button" aria-label="Go to Indie Game Showcase page">Indie Game Showcase</button></a> 
+                <a href="Art&Music.html"><button class="menu-button" aria-label="Go to Art & Music page">Art & Music</button></a>
+                <a href="EventCalendar.html"><button class="menu-button" aria-label="Go to Event Calendar page">Event Calendar</button></a>
+                <button class="menu-button" aria-label="Visit the Community Hub page">Community Hub</button>
+            </div>
+        </div>
+    </footer>
+
+    <!--Worthy, P. (n.d.). DECO7140 Contact 10 - Using APIs – Episode 1.-->
+    <p class="event-text p-2" id="card-form-desc">Want to host an event? Tell us!</p>
+    <form id="eventForm" class="m-2" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="event_name">Event Name:</label>
+            <input type="text" id="event_name" name="event_name" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-group">
+            <label for="organiser">Organiser:</label>
+            <input type="text" id="organiser" name="organiser" required>
+        </div>
+        <div class="form-group">
+            <label>Event Type:</label>
+            <div class="form-check"> 
+                <input class="form-check-input" type="radio" name="event_type" id="e-sports" value="e-sports" required>
+                <label class="form-check-label" for="e-sports">E-sports</label>
+            </div>
+            <div class="form-check"> 
+                <input class="form-check-input" type="radio" name="event_type" id="seminar" value="seminar" required>
+                <label class="form-check-label" for="seminar">Seminar</label>
+            </div>
+            <div class="form-check"> 
+                <input class="form-check-input" type="radio" name="event_type" id="groupActivity" value="groupActivity" required>
+                <label class="form-check-label" for="groupActivity">Group Activity</label>
+            </div>
+            <div class="form-check"> 
+                <input class="form-check-input" type="radio" name="event_type" id="newscast" value="newscast" required>
+                <label class="form-check-label" for="newscast">Newscast</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="date_time">Date and Time:</label>
+            <input type="text" id="date_time" name="date_time" placeholder="e.g. 2023-05-31 15:00" required>
+        </div>
+
+        <div>
+            <input class="btn btn-primary" type="submit" value="Submit Event">
+        </div>
+    </form>
+    </body> 
+
+<footer class="footer">
+    <div class="footer-section footer-section-1">
+        <p>&copy; 2223 GameGalaxy. All Rights Reserved.</p>
+        <p>Follow Us: @gamegalaxy</p>
+        <p>Contact Us: contact@gamegalaxy.com</p>
+        <p>Phone: 12-3456-789</p>
+        <p>Address: 123 Gaming Street, GameCity</p>
+    </div>
+    
+    <div class="footer-section footer-section-2">
+        <p class="footer-section-2-text">Security and Privacy Policy</p>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-section footer-section-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. Sed auctor quam vel augue luctus, id venenatis eros rhoncus. Curabitur hendrerit nisl at mi vehicula, ac malesuada nisi ultrices. Quisque consequat lobortis tristique. Vestibulum vel dolor eget arcu aliquet vulputate. Suspendisse potenti. Sed viverra est eget dictum. Etiam condimentum nisl eu sem rhoncus, eu fermentum elit suscipit. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. Sed auctor quam vel augue luctus, id venenatis eros rhoncus. Curabitur hendrerit nisl at mi vehicula, ac malesuada nisi ultrices. Quisque consequat lobortis tristique. Vestibulum vel dolor eget arcu aliquet vulputate. Suspendisse potenti. Sed viverra est eget dictum. Etiam condimentum nisl eu sem rhoncus, eu fermentum elit suscipit. Nulla facilisi.</p>
+    </div>
+    </footer>
+  
+<script src="js/site_interactions.js"></script>
+<script src="js/translate.js"></script>
+<script src="js/eventCalendar.js"></script>
+</html>

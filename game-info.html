@@ -1,0 +1,145 @@
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="media/fireball_6258470.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>GameGalaxy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/general_styles.css">
+        <link rel="stylesheet" href="css/game-info.css">
+
+        <div class="navbar">
+            <a href="index.html">
+                <img class="brand" src="media/Group 91.svg" alt="GameGalaxy brand">
+            </a>
+            <div class="page-links">
+                <a href="index.html"><button class="menu-button">Indie Game Showcase</button></a> 
+                <a href="Art&Music.html"><button class="menu-button">Art & Music</button></a>
+                <a href="EventCalendar.html"><button class="menu-button">Event Calendar</button></a>
+                <button class="menu-button">Community Hub</button>
+            </div>
+            <div class="user">
+                <img class="user_icon" src="media/icon _profile circle_.svg" alt="User icon">
+                <button class="login-button">Log In</button>
+                <button class="signup-button">Sign Up</button>
+                <button id="translate_button" aria-label="Translate">Translate</button>
+            </div>
+            <!--Google Translate. (n.d.). Google Translate Element. [JavaScript]. 
+                https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit-->
+            <div id="google_translate_element" style="display: none;">
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+        </div>
+    </head>
+
+    <body style="background-image: url('media/31829532.jpeg')">
+        <!-- header -->
+        <h1>Epic Odyssey: The Forgotten Realms</h1>
+        <div class="header">
+            <img src="media/game.jpg" alt="Game Header Image" class="big-image">
+            <div class="right-image-container">
+                <img src="media/game3.jpg" alt="Small Image 1" class="small-image">
+                <img src="media/game2.jpg" alt="Small Image 2" class="small-image">
+                <img src="media/game3.jpg" alt="Small Image 4" class="small-image">
+            </div>
+            <div class="info">
+                <h2>Gameplay:</h2>
+                <p>"Epic Odyssey: The Forgotten Realms" offers an adventure where your choices impact the story. Explore magical lands, fight epic battles, and uncover ancient secrets.</p>
+                <h2>Game Genre:</h2>
+                <p>It's a storytelling adventure game, part of the RPG (Role-Playing Game) genre. Play a character, make choices, and influence the story in a fantastical world.</p>
+                <p>#RPG #Adventure</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="column">
+                <!-- Developer Info -->
+                <a href="user-info.html" class="developer-intro">
+                    <div class="left-column">
+                        <img src="media/icon.jpg" alt="developer Avatar">
+                        <h2>Emily</h2>
+                        <p>ID: 1234567</p>
+                    </div>
+                </a>
+                <!-- Awards -->
+                <div class="awards-list">
+                    <h2>Awards</h2>
+                    <p>▪️ Best Game Design - Game Awards 2021</p>
+                    <p>▪️ Outstanding Art Direction - ArtCon 2020</p>
+                    <p>▪️ Game of the Year - Gamer's Choice Awards</p>
+                </div>
+                <!-- Download Buttons -->
+                <div class="download-buttons">
+                    <div class="download-button">Download for Windows</div>
+                    <div class="download-button">Download for Mac</div>
+                </div>      
+            </div>
+        
+            <!-- Game Description -->
+            <div class="game-description">
+                <h2>Game Description</h2>
+                <p>Welcome to the epic world of "Epic Odyssey: The Forgotten Realms." Explore a vast and enchanting realm filled with quests, mythical creatures, and legendary adventures. Uncover the secrets of a forgotten era and become the hero you were destined to be.</p>
+                <p>"This narrative-driven RPG invites you to explore rich landscapes, engage in epic battles, and uncover the mysteries of a forgotten realm. Your choices shape the story, and your feedback helps me refine the game further. Let's embark on this epic journey together!"</p>
+                <div class="comments-section">
+                    <h2>Comments:</h2>
+                    <div class="user-comment">
+                    <input type="text" placeholder="Enter your thoughts..." />
+                    <button>Submit</button>
+                    </div>
+                    <div class="user-comments">
+                        <div class="comment">
+                            <h3>GamerGirl87:  </h3>
+                            <p>"Emily's games are a masterpiece! 'Epic Odyssey' is an immersive experience, and I can't wait to see where the story leads. Keep up the fantastic work!"</p>
+                        </div>
+                        <div class="comment">
+                            <h3>PixelArtFanatic: </h3>
+                            <p> "The attention to detail in the artwork of 'Epic Odyssey' is astounding. I'm captivated by the visuals and can't get enough of the game's aesthetic."</p>
+                        </div>
+                        <div class="comment">
+                            <h3>AdventureSeeker123: </h3>
+                            <p>"I appreciate how Emily values player feedback. She listens to her community, making 'Epic Odyssey' a truly collaborative project. Can't wait for updates!"</p>
+                        </div>
+                        <div class="comment">
+                            <h3>MasterGamerX: </h3>
+                            <p>"The storytelling in 'Epic Odyssey' is top-notch. Emily has a knack for weaving intricate narratives that keep me hooked. This game is a gem!"</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="flex-footer-navbar footer-navbar"  aria-label="navbar">
+            <div class="page-links">
+                <a href="index.html"><button class="menu-button" aria-label="Go to Indie Game Showcase page">Indie Game Showcase</button></a> 
+                <a href="Art&Music.html"><button class="menu-button" aria-label="Go to Art & Music page">Art & Music</button></a>
+                <a href="EventCalendar.html"><button class="menu-button" aria-label="Go to Event Calendar page">Event Calendar</button></a>
+                <button class="menu-button" aria-label="Visit the Community Hub page">Community Hub</button>
+            </div>
+        </footer>  
+    </body> 
+
+    <footer class="footer">
+        <div class="footer-section footer-section-1">
+            <p>&copy; 2223 GameGalaxy. All Rights Reserved.</p>
+            <p>Follow Us: @gamegalaxy</p>
+            <p>Contact Us: contact@gamegalaxy.com</p>
+            <p>Phone: 12-3456-789</p>
+            <p>Address: 123 Gaming Street, GameCity</p>
+        </div>
+        <div class="footer-section footer-section-2">
+            <p class="footer-section-2-text">Security and Privacy Policy</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-section footer-section-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. Sed auctor quam vel augue luctus, id venenatis eros rhoncus. Curabitur hendrerit nisl at mi vehicula, ac malesuada nisi ultrices. Quisque consequat lobortis tristique. Vestibulum vel dolor eget arcu aliquet vulputate. Suspendisse potenti. Sed viverra est eget dictum. Etiam condimentum nisl eu sem rhoncus, eu fermentum elit suscipit. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at purus et nunc euismod consectetur. In hac habitasse platea dictumst. Sed auctor quam vel augue luctus, id venenatis eros rhoncus. Curabitur hendrerit nisl at mi vehicula, ac malesuada nisi ultrices. Quisque consequat lobortis tristique. Vestibulum vel dolor eget arcu aliquet vulputate. Suspendisse potenti. Sed viverra est eget dictum. Etiam condimentum nisl eu sem rhoncus, eu fermentum elit suscipit. Nulla facilisi.</p>
+        </div>
+    </footer>
+
+<script src="js/translate.js"></script>
+</html>

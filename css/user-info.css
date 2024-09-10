@@ -1,0 +1,331 @@
+body {
+    font-family: 'Marcellus', serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.header {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 1vw;
+    background-color: rgba(15,15,15,0.9);
+}
+
+.heading {
+    width: 90vw;
+    object-fit: cover;
+}
+
+.developer-intro {
+    padding: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.developer-intro img {
+    border-radius: 50%;
+    height: 6vw;
+}
+
+
+
+.developer-info h1 {
+    font-size: 3vw;
+    margin: 0;
+}
+
+.developer-info h2 {
+    font-size: 1.5vw;
+    margin: 0;
+    text-align: center;
+}
+
+.developer-info p {
+    font-size: 0.5vw;
+    margin: 0;
+}
+
+.developer-intro p {
+    font-size: 1vw;
+    margin: 0vw;
+}
+
+.slogan {
+    margin: 0;
+}
+
+.slogan h3 {
+    margin: 0;
+    font-size: 2vw;
+}
+
+/*------main part--------*/
+.game-info {
+    display: flex;
+    padding: 5vw;
+}
+/*------achievements--------*/
+.achievements {
+    background-color: rgba(32, 38, 44, 0.693);
+    color: #ffffff;
+    flex: 1;
+    padding: 2vw;
+    border-radius: 10px;
+}
+
+.achievements h2 {
+    font-size: 3vw;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(134, 140, 153, 0.5);
+    border-radius: 10px;
+}
+
+.achievements h3 {
+    font-size: 2vw;
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+
+.achievements p {
+    font-size: 1.5vw;
+    margin: 2vw;
+    margin-top: 1vw;
+}
+
+.game {
+    flex: 2;
+    margin-left: 3vw;
+}
+
+.game h2 {
+    font-size: 3vw;
+    margin-top: 0;
+    padding: 1vw;
+    background-color: rgba(134, 140, 153, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 2vw;
+}
+
+.game-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-images img {
+    width: 48%;
+    height: auto;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+}
+
+.game h3 {
+    margin: 0;
+    padding: 1vw;
+    background-color: rgba(134, 140, 153, 0.5);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: inline-block;
+    font-size: 2vw;
+}
+
+.description p {
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+.download-button {
+    text-align: center;
+    margin: 0;
+}
+
+.download-button {
+    background-color: rgba(134, 140, 153, 0.5);
+    color: #fff;
+    border: none;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    border: 1px solid #a7adba;
+    font-size: 2vw;
+}
+
+
+.download-button:hover {
+    background-color: rgba(77, 99, 145, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.player-reviews {
+    margin-top: 2vw;
+    padding: 2vw;
+}
+
+.player-reviews p {
+    font-size: 1.5vw;
+}
+
+/*-------comments-section------*/
+.comments-section {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
+
+.comments-section h2 {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: inline-block;
+    background-color: rgba(134, 140, 153, 0.5);
+    padding: 1vw;
+    font-size: 2vw;
+}
+
+.comments-section {
+    background-color: rgba(134, 140, 153, 0.3);
+    padding: 2vw;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .comments-section h2 {
+    font-size: 3vw;
+    margin: 0;
+    margin-bottom: 2vw;
+  }
+  
+  .user-comment {
+    margin-bottom: 2vw;
+  }
+  
+  .user-comment input[type="text"] {
+    width: 70%;
+    padding: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: rgba(211, 225, 255, 0.9);
+    font-size: 2vw;
+  }
+  
+  .user-comment button {
+    background-color: rgba(134, 140, 153, 0.5);
+    color: #fff;
+    border: none;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    border: 1px solid #a7adba;
+    font-size: 2vw;
+  }
+  
+  .user-comment button:hover {
+    background-color: rgba(77, 99, 145, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
+
+  .user-comments .comment {
+    background-color: rgba(134, 140, 153, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1vw;
+    margin-bottom: 1vw;
+  }
+  
+.comment h3 {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 2vw;
+  }
+  
+.comment p {
+    margin: 0;
+    font-size: 1.5vw;
+  }
+
+@media (max-width: 768px) {
+    .developer-info h1 {
+        font-size: 5vw;
+    }
+    .developer-info h2 {
+        font-size: 3vw;
+        margin-right: 2vw;
+    }
+    
+    .developer-intro img {
+        margin-left: 2vw;
+        height: 15vw;
+    }
+
+    .developer-info p {
+        font-size: 2vw; 
+    }
+    
+    .developer-intro p {
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
+
+    .slogan h3 {
+        font-size: 3vw;
+    }
+    
+    /*------main part--------*/
+    .game-info {
+        display: grid;
+    }
+    /*------achievements--------*/
+    .achievements h2 {
+        font-size: 4vw;
+    }
+    
+    .achievements h3 {
+        font-size: 3vw;
+    }
+    
+    .achievements p {
+        font-size: 2vw;
+    }
+
+    .game h3 {
+        font-size: 3vw;
+    }
+    
+    .download-button {
+        font-size: 3vw;
+    }
+    
+    .player-reviews p {
+        font-size: 2vw;
+    }
+    
+    /*-------comments-section------*/
+    .comments-section h2 {
+        font-size: 2.5vw;
+    }
+
+      .user-comment input[type="text"] {
+        font-size: 3vw;
+      }
+      
+      .user-comment button {
+        font-size: 3vw;
+      }
+      
+    .comment h3 {
+        font-size: 3vw;
+      }
+      
+    .comment p {
+        font-size: 3vw;
+      }
+}

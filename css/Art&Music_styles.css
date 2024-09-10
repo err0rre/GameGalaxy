@@ -1,0 +1,234 @@
+body {
+    background-color: rgb(27, 29, 32);
+    margin: 0;
+    padding: 0;
+    font-family: 'Marcellus', serif;
+    background-size: cover; 
+    background-repeat: no-repeat;
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-section {
+    display: flex;
+    padding: 20px;
+}
+
+.top-5-songs {
+    list-style: none;
+    padding: 2vw;
+    background-color: rgb(41, 46, 53, 0.7);
+    border-radius: 5px;
+    color: white;
+    max-width: 30vw;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+}
+
+.top-5-songs .song-list li p {
+    font-size: 1.5vw;
+}
+
+
+.top-5-songs .song-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.top-5-songs h2 {
+    margin: 0;
+}
+
+.top-5-songs .song-list li img {
+    max-width: 5vw;
+    margin-right: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.top-5-songs .song-list li .song-info {
+    flex: 1;
+    border-radius: 5px;
+    padding: 1vw;
+}
+
+.song-info:hover {
+    background-color: rgb(15, 15, 15, 0.5);
+}
+
+.top-5-songs .song-list li h3 {
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.recommended-music {
+    color: white;
+    padding: 2vw;
+    padding-top: 0;
+    margin-bottom: 0;
+    border-radius: 5px;
+    margin-left: 1vw;
+    padding-bottom: 0;
+}
+
+.recommended-music h2 {
+    margin-top: 0;
+    margin-bottom: 0.5vw;
+    text-align: center;
+    background-color: rgba(84, 87, 98, 0.2);
+    border-radius: 5px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.music-card {
+    background-color: rgba(84, 87, 98, 0.2);
+    color: white;
+    padding: 2vw;
+    margin-bottom: 1vw;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.music-card:hover {
+    background-color: rgba(135, 145, 156, 0.2);
+    
+}
+
+.recommended-music .music-card h3 {
+    font-size: 2vw;
+    margin-top: 0;
+    
+}
+
+.recommended-music .music-card p {
+    font-size: 1.5vw;
+}
+
+.artwork-section {
+    margin-bottom: 5vw;
+}
+
+.artwork-section h2 {
+    font-size: 4vw;
+    margin-top: 4vw;
+    background-color: rgba(135, 145, 156, 0.2);
+    color: white;
+    padding: 2vw;
+    text-align: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.artwork-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.artwork-card {
+    flex: 1;
+    background-color: rgb(15, 15, 15, 0.5);
+    margin: 1vw;
+    padding: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.artwork-card:hover {
+    background-color: rgba(56, 61, 69, 0.5);
+    transform: scale(1.05);
+}
+
+.artwork-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.artwork-card h3 {
+    font-size: 2vw;
+    color: aliceblue;
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+
+.artwork-card p {
+    font-size: 1vw;
+    color: rgb(201, 211, 219);
+    margin: 5px 0;
+}
+
+.artwork-card h4 {
+    font-size: 0.8vw;
+    color: rgb(127, 140, 154);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+.top-5-songs .song-list li p {
+    font-size: 2.5vw;
+}
+
+.top-5-songs .song-list li h3 {
+    font-size: 3vw;
+}
+
+.recommended-music .music-card h3 {
+    font-size: 3vw;
+}
+
+.recommended-music .music-card p {
+    font-size: 2.5vw;
+}
+.artwork-card h3 {
+    font-size: 3vw;
+}
+
+.artwork-card p {
+    font-size: 2vw;
+}
+
+.artwork-card h4 {
+    font-size: 2vw;
+}
+
+.recommended-music .music-card h3 {
+    font-size: 3.5vw;
+}
+
+.recommended-music .music-card p {
+    font-size: 3vw;
+}
+
+.artwork-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.artwork-card {
+    flex: 1;
+}
+
+.artwork-card h3 {
+    font-size: 4vw;
+}
+
+.artwork-card p {
+    font-size: 3vw;
+}
+
+.artwork-card h4 {
+    font-size: 3vw;
+}
+}
